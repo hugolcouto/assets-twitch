@@ -79,7 +79,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: linear-gradient(rgba(31,31,44,.9) 50%, rgba(0,0,0,0) 90%);
+	/* background: linear-gradient(rgba(31,31,44,.9) 50%, rgba(0,0,0,0) 90%); */
+	background: linear-gradient(rgba(9, 10, 27, 0.9) 10%, rgba(0,0,0,0) 90%)
 }
 
 .frontground {
