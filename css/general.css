@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Pokemon';
+	src: url('https://cdn.jsdelivr.net/npm/pokemon-font@1.8.1/fonts/pokemon-font.woff');
+}
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Pokemon';
+	color: #fff;
+}
+

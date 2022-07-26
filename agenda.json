@@ -1,0 +1,39 @@
+{
+	"agenda": [
+		{
+			"week": "Domingo",
+			"title": "Teste Segudna",
+			"vacancy": true
+		},
+		{
+			"week": "Segunda",
+			"title": "Teste Segudna",
+			"vacancy": true
+		},
+		{
+			"week": "Terça",
+			"title": "Teste Segudna",
+			"vacancy": false
+		},
+		{
+			"week": "Quarta",
+			"title": "Teste Segudna",
+			"vacancy": false
+		},
+		{
+			"week": "Quinta",
+			"title": "Teste Segudna",
+			"vacancy": false
+		},
+		{
+			"week": "Sexta",
+			"title": "Teste Segudna",
+			"vacancy": false
+		},
+		{
+			"week": "Sábado",
+			"title": "Teste Segudna",
+			"vacancy": true
+		}
+	]
+}
