@@ -1,7 +1,10 @@
 $(document).ready(function () {
-
-	$.get('https://github.com/hugolcouto/assets-twitch/blob/main/agenda.json', function (data) {
-		console.log(data);
+	$.getJSON('../agenda.json', function (data) {
+		$('.schedule-content').html(
+			data.agenda.map(function (item) {
+				return `<li>${item.week}: <span class="${item.vacancy && 'vacancy'}">${item.title}</span></li>`
+			})
+		)
 	})
 
 })

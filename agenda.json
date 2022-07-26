@@ -2,37 +2,37 @@
 	"agenda": [
 		{
 			"week": "Domingo",
-			"title": "Teste Segudna",
+			"title": "Não tem live!",
 			"vacancy": true
 		},
 		{
 			"week": "Segunda",
-			"title": "Teste Segudna",
+			"title": "Não tem live!",
 			"vacancy": true
 		},
 		{
 			"week": "Terça",
-			"title": "Teste Segudna",
+			"title": "Pokémon Gold",
 			"vacancy": false
 		},
 		{
 			"week": "Quarta",
-			"title": "Teste Segudna",
+			"title": "Sei lá",
 			"vacancy": false
 		},
 		{
 			"week": "Quinta",
-			"title": "Teste Segudna",
+			"title": "Ainda não sei também",
 			"vacancy": false
 		},
 		{
 			"week": "Sexta",
-			"title": "Teste Segudna",
+			"title": "Vish, sei não",
 			"vacancy": false
 		},
 		{
 			"week": "Sábado",
-			"title": "Teste Segudna",
+			"title": "Não tem live!",
 			"vacancy": true
 		}
 	]
