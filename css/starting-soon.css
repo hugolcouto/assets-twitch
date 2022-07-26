@@ -37,14 +37,18 @@
     transform: rotateX(262deg);
     width: 300vw;
 	animation: starsanim 4s linear infinite;
+	z-index: 3;
 }
 
 @keyframes bganim {
 	from {
-		background-position: 0 0;
+		/* background-position: 0 0; */
+		background-position-y: 9px;
 	}
 	to {
-		background-position: 0 116%;
+		/* background-position: 0 100%; */
+		/* background-position-y: 814px; */
+		background-position-y: 907px;
 	}
 }
 
@@ -185,9 +189,51 @@
 }
 
 .schedule > ul > li {
-
+	font-size: 14px;
 }
 
 .vacancy {
 	color: #666;
+}
+
+.is-today {
+	font-weight: bold;
+	font-size: 18px !important;
+}
+
+.is-today > span {
+}
+
+@keyframes spaceshipanim {
+	0% {
+		/* width: 400px; */
+		transform: 
+		translate(-330px, 300px)
+		scale(1)
+		rotate(70deg);
+	}
+	50% {
+		/* width: 100px; */
+		transform: 
+		translate(400px, 100px)
+		scale(.5)
+		rotate(20deg);
+	}
+	100% {
+		/* opacity: 0; */
+		/* width: 0px; */
+		transform: 
+		translate(800px, 0)
+		scale(0);
+	}
+}
+
+.spaceship {
+	width: 400px;
+	height: auto;
+	posittion: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	animation: spaceshipanim 20s linear infinite;
 }

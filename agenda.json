@@ -3,37 +3,44 @@
 		{
 			"week": "Domingo",
 			"title": "Não tem live!",
-			"vacancy": true
+			"vacancy": true,
+			"weekday": "dom."
 		},
 		{
 			"week": "Segunda",
 			"title": "Não tem live!",
-			"vacancy": true
+			"vacancy": true,
+			"weekday": "seg."
 		},
 		{
 			"week": "Terça",
 			"title": "Pokémon Gold",
-			"vacancy": false
+			"vacancy": false,
+			"weekday": "ter."
 		},
 		{
 			"week": "Quarta",
-			"title": "",
-			"vacancy": false
+			"title": "Pokémon Gold",
+			"vacancy": false,
+			"weekday": "qua."
 		},
 		{
 			"week": "Quinta",
-			"title": "Ainda não sei",
-			"vacancy": false
+			"title": "A Hat in Time",
+			"vacancy": false,
+			"weekday": "qui."
 		},
 		{
 			"week": "Sexta",
 			"title": "Vish, sei não",
-			"vacancy": false
+			"vacancy": false,
+			"weekday": "sex."
 		},
 		{
 			"week": "Sábado",
 			"title": "Não tem live!",
-			"vacancy": true
+			"vacancy": true,
+			"weekday": "sab."
 		}
 	]
 }
