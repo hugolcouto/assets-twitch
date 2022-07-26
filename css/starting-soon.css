@@ -206,25 +206,64 @@
 
 @keyframes spaceshipanim {
 	0% {
-		/* width: 400px; */
 		transform: 
-		translate(-330px, 300px)
-		scale(1)
-		rotate(70deg);
+			translate(-330px, 300px)
+			scale(1)
+			rotate(70deg)
+		;
 	}
-	50% {
-		/* width: 100px; */
+	5% {
 		transform: 
-		translate(400px, 100px)
-		scale(.5)
-		rotate(20deg);
+			translate(400px, 300px)
+			scale(.9)
+			rotate(30deg)
+		;
+	}
+	7% {
+		transform: 
+			translate(400px, 300px)
+			scale(.8)
+			rotate(-14deg)
+		;
+	}
+	8% {
+		transform: 
+			translate(390px, 300px)
+			scale(.7)
+			rotate(0deg)
+		;
+	}
+	9% {
+		transform: 
+			translate(470px, 300px)
+			scale(.6)
+			rotate(10deg)
+		;
+	}
+	12% {
+		transform: 
+			translate(600px, 300px)
+			scale(.4)
+			rotate(-5deg)
+		;
+	}
+	15% {
+		filter: drop-shadow(0px 0px 40px #D5B9F9);
+		transform:
+			translate(790px, 300px)
+			scale(0)
+			rotate(5deg)
+		;
+	}
+	17% {
+		filter: drop-shadow(0px 0px 100px #D5B9F9);
 	}
 	100% {
-		/* opacity: 0; */
-		/* width: 0px; */
+		filter: drop-shadow(0px 0px 100px #D5B9F9);
 		transform: 
-		translate(800px, 0)
-		scale(0);
+			translate(800px, 300px)
+			scale(0)
+		;
 	}
 }
 
@@ -235,5 +274,6 @@
 	top: 0;
 	left: 0;
 	z-index: 4;
-	animation: spaceshipanim 20s linear infinite;
+	animation: spaceshipanim 40s linear infinite;
+	/* filter: drop-shadow(0px 0px 60px white); */
 }
