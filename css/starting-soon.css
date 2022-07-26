@@ -1,0 +1,98 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.background {
+	overflow: hidden;
+	height: 100vh;
+	background-color: black;
+}
+
+.sky {
+	width: 100%;
+	height: 70vh;
+	background-image: url('../assets/bg_sky.png');
+	position: absolute;
+	top: 0;
+	left: 0;
+	perspective: 200px;
+	overflow: hidden;
+}
+
+@keyframes starsanim {
+	0% {
+		opacity: .3;
+	}
+	50% {
+		opacity: .7;
+	}
+	100% {
+		opacity: .3;
+	}
+}
+
+.stars {
+	width: 100%;
+	height: 300px;
+	background-image: url('../assets/stars.png');
+	position: absolute;
+	top: 0;
+	left: -100vw;
+    transform: rotateX(262deg);
+    width: 300vw;
+	animation: starsanim 4s linear infinite;
+}
+
+@keyframes bganim {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 110%;
+	}
+}
+
+.ground-perspective {
+	perspective: 200px;
+	height: 50vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.ground {
+	position: absolute;
+	left: -100vw;
+	width: 300%;
+	height: 50vh;
+	top: -100px;
+	background: url('../assets/bg.png');
+	transform: rotateX(50deg);
+	animation: bganim 5s linear infinite;
+	/* filter: brightness(0.5); */
+}
+
+.ground::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(rgba(31,31,44,.9) 50%, rgba(0,0,0,0) 90%);
+}
+
+.frontground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	/* background-color: blue; */
+}
