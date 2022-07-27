@@ -4,6 +4,13 @@ $(document).ready(function () {
 
 	const today = date.toLocaleDateString('pt-bt', { weekday: 'short' });
 
+	function parseUrl(url) {
+		const explodedQuery = url.split('=');
+		return $.url(explodedQuery[1]).data.attr.source;
+	}
+
+	$('.title').html(parseUrl(location.search));
+
 	$.getJSON('agenda.json', function (data) {
 		$('.schedule-content').html(
 			data.agenda.map(function (item) {
