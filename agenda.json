@@ -15,7 +15,7 @@
 		{
 			"week": "Terça",
 			"title": "Pokémon Gold",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "ter."
 		},
 		{
@@ -26,13 +26,13 @@
 		},
 		{
 			"week": "Quinta",
-			"title": "A Hat in Time",
+			"title": "Bayonetta",
 			"vacancy": false,
 			"weekday": "qui."
 		},
 		{
 			"week": "Sexta",
-			"title": "Vish, sei não",
+			"title": "Pokémon Gold",
 			"vacancy": false,
 			"weekday": "sex."
 		},
