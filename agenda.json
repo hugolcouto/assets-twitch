@@ -8,7 +8,7 @@
 		},
 		{
 			"week": "Segunda",
-			"title": "Não tem live!",
+			"title": "Pokémon Gold",
 			"vacancy": true,
 			"weekday": "seg."
 		},
@@ -26,7 +26,7 @@
 		},
 		{
 			"week": "Quinta",
-			"title": "Pokémon Gold",
+			"title": "Pokémon Unite",
 			"vacancy": false,
 			"weekday": "qui."
 		},
