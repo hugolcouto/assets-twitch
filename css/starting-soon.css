@@ -106,14 +106,33 @@
 	justify-content: center;
 }
 
-.twitter {
+.line-twitter {
 	display: flex;
 	align-items: center;
+	
 }
 
-.twitter > p {
+.line-twitter > p {
 	margin-top: 12px;
 	margin-left: 12px;
+}
+
+@keyframes twitteranim {
+	0% {
+		transform: translateY(-5px) rotateY(0deg);
+	}
+	50% {
+		transform: translateY(5px) rotateY(180deg);
+	}
+	100% {
+		transform: translateY(-5px) rotateY(360deg);
+	}
+}
+
+.twitter-icon {
+	border: 2px dahsed red;
+	transform-origin: center;
+	animation: twitteranim 3s linear infinite;
 }
 
 @keyframes titleanim {
