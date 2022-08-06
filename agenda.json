@@ -15,19 +15,19 @@
 		{
 			"week": "Terça",
 			"title": "Pokémon Gold",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "ter."
 		},
 		{
 			"week": "Quarta",
 			"title": "Pokémon Gold",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "qua."
 		},
 		{
 			"week": "Quinta",
 			"title": "Pokémon Unite",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "qui."
 		},
 		{
