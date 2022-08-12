@@ -2,8 +2,8 @@
 	"agenda": [
 		{
 			"week": "Domingo",
-			"title": "Não tem live!",
-			"vacancy": true,
+			"title": "Pokémon Gold",
+			"vacancy": false,
 			"weekday": "dom."
 		},
 		{
@@ -20,7 +20,7 @@
 		},
 		{
 			"week": "Quarta",
-			"title": "Pokémon Gold",
+			"title": "Pokémon Unite",
 			"vacancy": true,
 			"weekday": "qua."
 		},
@@ -38,8 +38,8 @@
 		},
 		{
 			"week": "Sábado",
-			"title": "Não tem live!",
-			"vacancy": true,
+			"title": "Pokémon Gold",
+			"vacancy": false,
 			"weekday": "sab."
 		}
 	]
