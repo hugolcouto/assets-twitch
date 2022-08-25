@@ -1,0 +1,70 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Waiting for the Sunrise', cursive;
+	color: #021190;
+}
+
+main {
+	background-color: #111;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	min-width: 900px;
+	min-height: 600px;
+	background-image: url('../assets/paper_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 20px;
+	background-blend-mode: multiply;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+ul {
+	list-style: '* ';
+	padding-left: 80px;
+}
+
+ul > li {
+	font-size: 36px;
+}
+
+ul > li.vacancy {
+	text-decoration: line-through;
+}
+
+.icon {
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+}
+
+.controller {
+	position: absolute;
+	top: 120px;
+	left: 255px;
+    transform: rotate(-22deg);
+	filter: drop-shadow(17px -3px 14px #222);
+}

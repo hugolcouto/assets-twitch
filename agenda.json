@@ -2,13 +2,13 @@
 	"agenda": [
 		{
 			"week": "Domingo",
-			"title": "Pokémon Gold",
+			"title": "",
 			"vacancy": true,
 			"weekday": "dom."
 		},
 		{
 			"week": "Segunda",
-			"title": "Just Chat / Jogar alguma coisa",
+			"title": "Retro",
 			"vacancy": false,
 			"weekday": "seg."
 		},
@@ -32,13 +32,13 @@
 		},
 		{
 			"week": "Sexta",
-			"title": "Fortnite / Tower of Fantasy",
+			"title": "Fortnite",
 			"vacancy": false,
 			"weekday": "sex."
 		},
 		{
 			"week": "Sábado",
-			"title": "Pokémon Gold",
+			"title": "",
 			"vacancy": true,
 			"weekday": "sab."
 		}
