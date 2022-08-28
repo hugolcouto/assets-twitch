@@ -4,12 +4,25 @@ $(document).ready(function () {
 
 	const today = date.toLocaleDateString('pt-bt', { weekday: 'short' });
 
-	function parseUrl(url) {
-		const explodedQuery = url.split('=');
-		return $.url(explodedQuery[1]).data.attr.source;
+
+	$.urlParam = function (name) {
+		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		if (results == null) {
+			return null;
+		}
+		return decodeURI(results[1]) || 0;
 	}
 
-	$('.title').html(parseUrl(location.search));
+	$('.title').html($.urlParam('title'));
+	$('.tt').html($.urlParam('twitter'));
+
+	if ($.urlParam('twitter') === null) {
+		$('.line-twitter').hide();
+	}
+
+	if ($.urlParam('view') === '1') {
+		$('.frontground').hide();
+	}
 
 	$.getJSON('agenda.json', function (data) {
 		$('.schedule-content').html(
