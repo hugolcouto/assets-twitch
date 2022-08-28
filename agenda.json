@@ -38,8 +38,8 @@
 		},
 		{
 			"week": "Sábado",
-			"title": "",
-			"vacancy": true,
+			"title": "Genshin Impact",
+			"vacancy": false,
 			"weekday": "sab."
 		}
 	]
