@@ -18,14 +18,14 @@ $(document).ready(function () {
 					return `
 						<li class="${item.vacancy && 'vacancy'}">
 							<span class="weekday">${item.week}</span>
-							<span class="game">Dia livre</span>
+							<span class="game">Não tem live</span>
 						</li>
 					`
 				}
 				// return `<li class="${today === item.weekday && 'is-today'}">${item.week}: <span class="${item.vacancy && 'vacancy'}">${item.title}</span></li>`
 				return `
 				<li>
-					<span class="weekday">${item.week}</span>
+					<span class="weekday">${item.week} • 22h</span>
 					<span class="game">${item.title}</span>
 				</li>
 				`

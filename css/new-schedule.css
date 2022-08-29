@@ -120,6 +120,8 @@ main {
 
 .content > h4 {
 	text-align: center;
+	margin-bottom: 16px;
+	font-family: 'PixeloidMono';
 }
 
 .schedule {
@@ -225,17 +227,18 @@ main {
 	transform: scale(.8) rotate(333deg);
 	border: 6px solid #ccc;
 	box-shadow: 2px 3px 12px -5px #000;
+	font-family: 'Fredoka One', cursive;
 }
 
 .tag-price > span:nth-of-type(1) {
 	color: var(--color-white);
-	font-size: 9px;
+	font-size: 14px;
 	text-align: center;
 }
 
 .tag-price > span:nth-of-type(2) {
 	color: var(--color-white);
-	font-size: 18px;
+	font-size: 24px;
 }
 
 .result {
