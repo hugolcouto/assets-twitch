@@ -8,7 +8,7 @@
 		},
 		{
 			"week": "Segunda",
-			"title": "Tomb Raider",
+			"title": "Genshin Impact",
 			"vacancy": false,
 			"weekday": "seg."
 		},
@@ -39,7 +39,7 @@
 		{
 			"week": "Sábado",
 			"title": "Genshin Impact",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "sab."
 		}
 	]

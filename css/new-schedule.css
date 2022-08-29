@@ -1,0 +1,247 @@
+:root {
+	--color-white: #fff;
+	--color-black: #222f3e;
+	--color-red: #FF0F0F;
+	--color-dark-red: #8A2139;
+	--color-light-red: #ee5253;
+	--color-pastel-red: #ff6b6b;
+}
+
+@font-face {
+	font-family: 'PixeloidMono';
+	src: url('../fonts/PixeloidMono.ttf');
+}
+
+@font-face {
+	font-family: 'GAMEOVER';
+	src: url('../fonts/GAMEOVER.TTF');
+}
+
+@font-face {
+	font-family: 'NiseOverWorks';
+	src: url('../fonts/NiseOverWorks.TTF');
+}
+
+@font-face {
+	font-family: 'NiseOverWorks';
+	src: url('../fonts/NiseOverWorks.TTF');
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	background-color: #222;
+	padding-top: 20px;
+	padding-left: 20px;
+	position:relative;
+	display: flex !important;
+}
+
+.magazine {
+	width: 600px;
+	height: 800px;
+	background-color: var(--color-white);
+	background-image: url('../assets/bg_lines.png');
+	background-size: 15%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.magazine::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	content: '';
+    background: linear-gradient(90deg, rgba(0,0,0,.8) -2%, rgba(0,0,0,0) 4%);
+}
+
+.date {
+	background-color: var(--color-red);
+	position: absolute;
+	color: var(--color-white);
+    padding: 130px 130px 10px;
+    position: absolute;
+    left: -180px;
+    top: -65px;
+	transform: rotate(-45deg);
+	font-family: 'PixeloidMono';
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.headline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.headline {
+	padding-top: 56px;
+}
+
+.headline > h2 {
+	font-family: 'GAMEOVER';
+	text-shadow: 
+		-2px -2px 4px #2100EE, 
+		0px 2px 4px #208A4B, 
+		2px -2px 4px #BD1616;
+	color: #fff;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 16px;
+	margin-bottom: 12px;
+}
+
+.headline > h1 {
+	font-family: 'NiseOverWorks';
+	color: var(--color-black);
+    text-shadow: 3px 3px 0px var(--color-light-red);
+	font-weight: 400;
+	font-size: 71px;
+	line-height: 71px;
+}
+
+.content {
+	padding: 0 32px 0;
+	position: relative;
+}
+
+.content > h4 {
+	text-align: center;
+}
+
+.schedule {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	z-index: 2;
+	position: relative;
+}
+
+.schedule > li {
+	display: flex;
+	flex-direction: column;
+}
+
+.schedule > li.vacancy > .game {
+	color: var(--color-pastel-red);
+
+}
+
+.weekday {
+	background-color: var(--color-black);
+	font-family: 'Fredoka One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	width: fit-content;
+	color: var(--color-white);
+	padding: 4px 12px;
+	z-index: 2;
+	border-radius: 0 10px 0 0;
+}
+
+.game {
+	z-index: 1;
+	font-family: 'Fredoka One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	background-color: var(--color-light-red);
+	color: var(--color-white);
+	width: fit-content;
+	padding: 6px 12px;
+	border-radius: 0 10px 10px 10px;
+}
+
+.vgs {
+	height: fit-content;
+	position: absolute;
+	width: 85%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	z-index: 1;
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 32px 32px;
+}
+
+.qr {
+	width: 80px;
+}
+
+.media {
+	margin-left: 32px;
+}
+
+.text-media {
+	display: flex;
+	align-items: center;
+}
+
+.text-media > span {
+	font-family: 'Fredoka One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 15px;
+	margin-left: 12px;
+}
+
+.tag-price {
+    width: 180px;
+    height: 180px;
+    background-color: #5f27cd;
+    position: absolute;
+    bottom: 118px;
+    right: 16px;
+    z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 12px;
+	border-radius: 1000px;
+	transform: scale(.8) rotate(333deg);
+	border: 6px solid #ccc;
+	box-shadow: 2px 3px 12px -5px #000;
+}
+
+.tag-price > span:nth-of-type(1) {
+	color: var(--color-white);
+	font-size: 9px;
+	text-align: center;
+}
+
+.tag-price > span:nth-of-type(2) {
+	color: var(--color-white);
+	font-size: 18px;
+}
+
+.result {
+	margin-left: 32px;
+}
+
+.result > h2 {
+	color: var(--color-white);
+}

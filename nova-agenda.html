@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/new-schedule.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+</head>
+<body>
+	<main>
+		<div>
+		<section class="magazine" id="magazine">
+			<div class="tag-price">
+				<span>Novo preço! <br> Agora por apenas</span>
+				<span>1 FOLLOW</span>
+			</div>
+			<span class="date">de <span class="from-date"></span> a <span class="to-date"></span></span>
+			<div class="headline">
+				<h2>locadora do red</h2>
+				<h1>AGENDA</h1>
+			</div>
+			<div class="content">
+				<h4>Confira os jogos da semana!</h4>
+				<ul class="schedule">
+				</ul>
+				<img class="vgs" src="./assets/vgs.png" alt="">
+			</div>
+			<div class="footer">
+				<img class="qr" src='./assets/qr.png' alt=''/>
+				<div class="media">
+					<div class="text-media">
+						<img src="./assets/icons8-twitch-48.png" alt="">
+						<span>twitch.tv/locadoradored</span>
+					</div>
+					<div class="text-media">
+						<img src="./assets/icons8-twitter-48.png" alt="">
+						<span >twitter.com/locadoradored</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<button id="btnSave">Gerar imagem</button>
+		</div>
+		<div class="result">
+			<h2>Imagem gerada</h2>
+			<div id="canvas"></div>
+		</div>
+	</main>
+	<script src="//unpkg.com/jquery"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+	<script src="./js/new-schedule.js"></script>
+</body>
+</html>
