@@ -2,8 +2,8 @@
 	"agenda": [
 		{
 			"week": "Domingo",
-			"title": "",
-			"vacancy": true,
+			"title": "Maratona Sonic: Sonic 1, 2 e 3&K",
+			"vacancy": false,
 			"weekday": "dom."
 		},
 		{
@@ -21,13 +21,13 @@
 		{
 			"week": "Quarta",
 			"title": "Pokémon Unite",
-			"vacancy": false,
+			"vacancy": true,
 			"weekday": "qua."
 		},
 		{
 			"week": "Quinta",
 			"title": "Pokémon Unite",
-			"vacancy": true,
+			"vacancy": false,
 			"weekday": "qui."
 		},
 		{
@@ -39,7 +39,7 @@
 		{
 			"week": "Sábado",
 			"title": "Genshin Impact",
-			"vacancy": true,
+			"vacancy": false,
 			"weekday": "sab."
 		}
 	]
