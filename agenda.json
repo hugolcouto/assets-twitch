@@ -1,46 +1,55 @@
 {
 	"agenda": [
 		{
-			"week": "Domingo",
-			"title": "Maratona Sonic: Sonic 1, 2 e 3&K",
-			"vacancy": false,
-			"weekday": "dom."
-		},
-		{
 			"week": "Segunda",
 			"title": "Genshin Impact",
 			"vacancy": false,
-			"weekday": "seg."
+			"weekday": "seg.",
+			"hour": "22h"
 		},
 		{
 			"week": "Terça",
 			"title": "Pokémon Gold",
 			"vacancy": false,
-			"weekday": "ter."
+			"weekday": "ter.",
+			"hour": "22h"
+
 		},
 		{
 			"week": "Quarta",
 			"title": "Pokémon Unite",
 			"vacancy": true,
-			"weekday": "qua."
+			"weekday": "qua.",
+			"hour": "22h"
+
 		},
 		{
 			"week": "Quinta",
-			"title": "Pokémon Unite",
-			"vacancy": false,
-			"weekday": "qui."
+			"title": "",
+			"vacancy": true,
+			"weekday": "qui.",
+			"hour": "22h"
 		},
 		{
 			"week": "Sexta",
 			"title": "Fortnite",
 			"vacancy": false,
-			"weekday": "sex."
+			"weekday": "sex.",
+			"hour": "22h"
 		},
 		{
 			"week": "Sábado",
-			"title": "Genshin Impact",
+			"title": "Pokémon Unite",
 			"vacancy": false,
-			"weekday": "sab."
+			"weekday": "sab.",
+			"hour": "19h"
+		},
+		{
+			"week": "Domingo",
+			"title": "Maratona Sonic: Sonic 1, 2 e 3&K",
+			"vacancy": false,
+			"weekday": "dom.",
+			"hour": "19h"
 		}
 	]
 }
