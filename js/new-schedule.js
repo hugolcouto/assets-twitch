@@ -54,6 +54,6 @@ $(document).ready(function () {
 		return `${spltDate[0]}/${spltDate[1]}`;
 	}
 
-	$('.from-date').html(formatDate(date.toLocaleDateString('pt-br')))
-	$('.to-date').html(formatDate(date.addDays(6).toLocaleDateString('pt-br')))
+	$('.from-date').html(formatDate(date.addDays(1).toLocaleDateString('pt-br')))
+	$('.to-date').html(formatDate(date.addDays(7).toLocaleDateString('pt-br')))
 })
