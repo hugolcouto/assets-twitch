@@ -1,4 +1,6 @@
-
+:root {
+	--title: #eb2618;
+}
 
 @font-face {
 	font-family: 'Saturn';
@@ -103,7 +105,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: linear-gradient(rgba(9, 10, 27, 0.9) 10%, rgba(0,0,0,0) 90%)
+	background: linear-gradient(rgba(59, 17, 17, 0.9) 10%, rgba(0,0,0,0) 90%)
 }
 
 .frontground {
@@ -157,7 +159,7 @@
 }
 
 .title {
-	color: #5769bc;
+	color: var(--title);
 	text-shadow: 2px 2px #fff;
 	font-size: 70px;
 	animation: titleanim 2s linear infinite;

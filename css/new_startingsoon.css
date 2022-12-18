@@ -1,0 +1,37 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	height: 80vh;
+	background: url('../assets/bg_top.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.top h1 {
+	color: blue;
+}
+
+@keyframes bgBot {
+	0% {
+		background-position: 0vw 0;
+	}
+	100% {
+		background-position: 100vw 0;
+	}
+}
+
+.bottom {
+	height: 20vh;
+	background: url('../assets/bg_bot.png');
+	background-size: cover;
+	animation: bgBot 40s linear infinite;
+}
