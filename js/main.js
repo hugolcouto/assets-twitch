@@ -15,6 +15,12 @@ $(document).ready(function () {
 
 	$('.title').html($.urlParam('title'));
 	$('.tt').html($.urlParam('twitter'));
+	// $('.agenda').html($.urlParam('agenda'));
+
+	if ($.urlParam('agenda') == '0') {
+		console.log('agenda is false')
+		$('.schedule').hide();
+	}
 
 	if ($.urlParam('twitter') === null) {
 		$('.line-twitter').hide();

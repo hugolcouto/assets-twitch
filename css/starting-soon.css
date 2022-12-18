@@ -1,3 +1,14 @@
+
+
+@font-face {
+	font-family: 'Saturn';
+	src: url('../fonts/NiseSegaSaturnU.TTF');
+}
+
+* {
+	font-family: 'Saturn';
+}
+
 .background {
 	overflow: hidden;
 	height: 100vh;
@@ -109,7 +120,6 @@
 .line-twitter {
 	display: flex;
 	align-items: center;
-	
 }
 
 .line-twitter > p {
@@ -130,7 +140,6 @@
 }
 
 .twitter-icon {
-	border: 2px dahsed red;
 	transform-origin: center;
 	animation: twitteranim 3s linear infinite;
 }
@@ -148,11 +157,13 @@
 }
 
 .title {
-	color: #fff;
-	font-size: 80px;
+	color: #5769bc;
+	text-shadow: 2px 2px #fff;
+	font-size: 70px;
 	animation: titleanim 2s linear infinite;
 	text-transform: uppercase;
-	max-width: 500px;
+	width: 100%;
+	text-align: center;
 }
 
 .window-title {
@@ -166,9 +177,9 @@
 .content {
 	width: 90%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .schedule {
