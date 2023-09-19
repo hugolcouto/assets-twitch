@@ -5,10 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
+		@font-face {
+			font-family: "Sixtyfour Web";
+			src: url("./assets/fonts/Sixtyfour[wdth,wght].woff2") format("woff2");
+		}
+
+		@font-face {
+			font-family: 'nise';
+			src: url('assets/fonts/NiseEswat/NiseEswat.TTF');
+		}
+
 		*, *::before, *::after {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
+			font-family: "nise", sans-serif;
 		}
 
 		#particles-js {
@@ -17,15 +28,71 @@
 			position: fixed;
 			z-index: 1;
 		}
+
+		#text {
+			inset: 0;
+			position: fixed;
+			z-index: 2;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		h1 {
+			text-transform: uppercase;
+			color: #efefef;
+			font-size: 42px;
+			font-weight: 100;
+			text-align: center;
+		}
+		h1 span {
+			font-size: 80px;
+		}
 	</style>
+		<script src="https://unpkg.com/jquery"></script>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'assets/particles.json');
+	
+			// Obtém o valor da query param 'nome'
+			var hasCountdown = getUrlParameter('countdown');
+			var countdownTimer = parseInt(getUrlParameter('timer')) || 5; 
+	
+			// Atualiza o texto com o valor da query param
+	
+			// Função para obter o valor de uma query param
+			function getUrlParameter(name) {
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+			var results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+	
+			if(hasCountdown) {
+				var count = countdownTimer * 60; // 5 minutos em segundos
+				var countdown = setInterval(function() {
+					var minutes = Math.floor(count / 60);
+					var seconds = count % 60;
+		
+					$("#timer").text(minutes + ":" + seconds);
+		
+					if (count === 0) {
+					clearInterval(countdown);
+					$("#timer").text("Loading...");
+					} else {
+					count--;
+					}
+				}, 1000);
+			} else {
+				$("#text").hide();
+			}
+		</script>
 </head>
 <body>
 	<div id="particles-js">
 	</div>
-	<script src="https://unpkg.com/jquery"></script>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	<script>
-		particlesJS.load('particles-js', 'assets/particles.json');
-	</script>
+	<div id="text">
+		<h1>starting soon <br><span id="timer"></span></h1>
+	</div>
 </body>
 </html>
