@@ -41,52 +41,15 @@
 		h1 {
 			text-transform: uppercase;
 			color: #efefef;
-			font-size: 42px;
+			font-size: 62px;
 			font-weight: 100;
 			text-align: center;
 		}
 		h1 span {
-			font-size: 80px;
+			font-size: 120px;
 		}
 	</style>
-		<script src="https://unpkg.com/jquery"></script>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-		<script>
-			particlesJS.load('particles-js', 'assets/particles.json');
-	
-			// Obtém o valor da query param 'nome'
-			var hasCountdown = getUrlParameter('countdown');
-			var countdownTimer = parseInt(getUrlParameter('timer')) || 5; 
-	
-			// Atualiza o texto com o valor da query param
-	
-			// Função para obter o valor de uma query param
-			function getUrlParameter(name) {
-			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-			var results = regex.exec(location.search);
-			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-			}
-	
-			if(hasCountdown) {
-				var count = countdownTimer * 60; // 5 minutos em segundos
-				var countdown = setInterval(function() {
-					var minutes = Math.floor(count / 60);
-					var seconds = count % 60;
-		
-					$("#timer").text(minutes + ":" + seconds);
-		
-					if (count === 0) {
-					clearInterval(countdown);
-					$("#timer").text("Loading...");
-					} else {
-					count--;
-					}
-				}, 1000);
-			} else {
-				$("#text").hide();
-			}
-		</script>
+
 </head>
 <body>
 	<div id="particles-js">
@@ -94,5 +57,43 @@
 	<div id="text">
 		<h1>starting soon <br><span id="timer"></span></h1>
 	</div>
+	<script src="https://unpkg.com/jquery"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'assets/particles.json');
+
+		// Obtém o valor da query param 'nome'
+		var hasCountdown = getUrlParameter('countdown');
+		var countdownTimer = parseInt(getUrlParameter('timer')) || 5; 
+
+		// Atualiza o texto com o valor da query param
+
+		// Função para obter o valor de uma query param
+		function getUrlParameter(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+		var results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+		if(hasCountdown && hasCountdown == 1) {
+			var count = countdownTimer * 60; // 5 minutos em segundos
+			var countdown = setInterval(function() {
+				var minutes = Math.floor(count / 60);
+				var seconds = count % 60;
+	
+				$("#timer").text(minutes + ":" + seconds);
+	
+				if (count === 0) {
+				clearInterval(countdown);
+				$("#timer").text("Loading...");
+				} else {
+				count--;
+				}
+			}, 1000);
+		} else {
+			$("#text").hide();
+		}
+	</script>
 </body>
 </html>
