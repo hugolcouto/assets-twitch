@@ -7,9 +7,15 @@
 	src: url('../assets/fonts/NiseEswat/NiseEswat.TTF');
 }
 
+@font-face {
+	font-family: 'sixtyfour';
+	src: url('../assets/fonts/sixtyfour/Sixtyfour[wdth\,wght].ttf');
+}
+
 * {
-	font-family: 'nise';
-	font-weight: 100;
+	font-family: 'sixtyfour';
+	font-weight: 400;
+	text-shadow: 0 0 40px #fff;
 }
 
 .background {
@@ -119,39 +125,12 @@
 	justify-content: center;
 }
 
-.line-twitter {
-	display: flex;
-	align-items: center;
-}
-
-.line-twitter > p {
-	margin-top: 12px;
-	margin-left: 12px;
-}
-
-@keyframes twitteranim {
-	0% {
-		transform: translateY(-5px) rotateY(0deg);
-	}
-	50% {
-		transform: translateY(5px) rotateY(180deg);
-	}
-	100% {
-		transform: translateY(-5px) rotateY(360deg);
-	}
-}
-
-.twitter-icon {
-	transform-origin: center;
-	animation: twitteranim 3s linear infinite;
-}
-
 @keyframes titleanim {
 	0% {
 		opacity: 1;
 	}
 	50% {
-		opacity: .4;
+		opacity: .5;
 	}
 	100% {
 		opacity: 1;
@@ -159,6 +138,7 @@
 }
 
 .title {
+	animation: titleanim 4s linear infinite;
 	color: var(--title);
 	font-size: 70px;
 	text-transform: uppercase;
@@ -167,6 +147,7 @@
 }
 
 .countdown {
+	animation: titleanim 4s linear infinite;
 	color: var(--title);
 	font-size: 120px;
 	text-transform: uppercase;
