@@ -14,30 +14,30 @@ $(document).ready(function () {
 	}
 
 	$('.title').html($.urlParam('title'));
-	$('.tt').html($.urlParam('twitter'));
-	// $('.agenda').html($.urlParam('agenda'));
-
-	if ($.urlParam('agenda') == '0') {
-		console.log('agenda is false')
-		$('.schedule').hide();
-	}
-
-	if ($.urlParam('twitter') === null) {
-		$('.line-twitter').hide();
-	}
 
 	if ($.urlParam('view') === '1') {
 		$('.frontground').hide();
 	}
 
-	$.getJSON('agenda.json', function (data) {
-		$('.schedule-content').html(
-			data.agenda.map(function (item) {
-				if (item.vacancy) {
-					return `<li>${item.week}: <span class="${item.vacancy && 'vacancy'}">Folga</span></li>`
-				}
-				return `<li class="${today === item.weekday && 'is-today'}">${item.week}: <span class="${item.vacancy && 'vacancy'}">${item.title}</span></li>`
-			})
-		)
-	})
+	var hasCountdown = $.urlParam('countdown');
+	var countdownTimer = parseInt($.urlParam('timer')) || 5;
+
+	if (hasCountdown && hasCountdown == 1) {
+		var count = countdownTimer * 60; // 5 minutos em segundos
+		var countdown = setInterval(function () {
+			var minutes = Math.floor(count / 60);
+			var seconds = count % 60;
+
+			$(".countdown").text(minutes + ":" + seconds);
+
+			if (count === 0) {
+				clearInterval(countdown);
+				$(".countdown").text("Loading...");
+			} else {
+				count--;
+			}
+		}, 1000);
+	} else {
+		$(".countdown").hide();
+	}
 })
