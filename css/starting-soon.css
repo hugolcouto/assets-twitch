@@ -1,5 +1,7 @@
 :root {
 	--title: #efefef;
+	--primary: #00b894;
+	--primary-opacity: #00b894e6;
 }
 
 @font-face {
@@ -21,7 +23,7 @@
 .background {
 	overflow: hidden;
 	height: 100vh;
-	background-color: black;
+	background-color: #000;
 }
 
 .sky {
@@ -111,7 +113,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: linear-gradient(rgba(59, 17, 17, 0.9) 10%, rgba(0,0,0,0) 90%)
+	background: linear-gradient(var(--primary-opacity) 10%, rgba(0,0,0,0) 90%)
 }
 
 .frontground {
@@ -245,8 +247,6 @@
 	font-size: 18px !important;
 }
 
-.is-today > span {
-}
 
 @keyframes spaceshipanim {
 	0% {
@@ -323,7 +323,7 @@
 .spaceship {
 	width: 400px;
 	height: auto;
-	posittion: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 4;
